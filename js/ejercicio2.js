@@ -25,5 +25,7 @@ do{
 
   media = intSuma/cuenta;
 
-  console.log("el total de la suma es: " + intSuma +
-              " y la media es: " + media );
+  document.write(̣`<h1>El resultado de la suma</h1>
+                  ${intSuma}
+                  <h1>El promedio total es:</h1>
+                  ${media}`̣);
