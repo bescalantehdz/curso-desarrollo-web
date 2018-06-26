@@ -18,10 +18,9 @@ while(isNaN(intNumeroInicial) || isNaN(intNumeroInicial)){
 
 for (var i = intNumeroInicial; i < intNumeroFinal ; i++) {
 
-  let residuo = i%2;
-
-  if(residuo != 0){
-
-    console.log("el numero "+i+" es impar");
+     let residuo = i%2;
+	 if(residuo != 0){
+		
+	console.log("el numero "+i+" es impar");
   }
 }

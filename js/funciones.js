@@ -1,32 +1,14 @@
 "use strict"
 
-
-//Funcion con paramentros
-var resutado;
-
-
-function porConsola(intNumeroX,intNumeroY){
-
-  console.log("Suma: "+(intNumeroX+intNumeroY));
-  console.log("Resta: "+(intNumeroX-intNumeroY));
-  console.log("Multiplicacion: "+(intNumeroX*intNumeroY));
-  console.log("Division: "+(intNumeroX/intNumeroY));
+// declaracion funciones
+function calculadora(){
+document.write(`<p>Suma:</p>${1+2}
+                <p>Resta:${5-2}</p>
+                <p>Multiplicacion:${3*9}</p>
+                <p>Division:${10/2}</p>`);
 }
 
-function porPantalla(intNumeroX,intNumeroY){
-  document.write("Suma: "+(intNumeroX+intNumeroY)+"</br>");
-  document.write("resta: "+(intNumeroX-intNumeroY)+"</br>");
-  document.write("multiplicacion: "+(intNumeroX*intNumeroY)+"</br>");
-  document.write("divison: "+(intNumeroX/intNumeroY)+"</br>");
-}
+calculadora();
 
-function calculadora(intNumeroY,intNumeroX,valor = false){
 
-  if(valor){
-            porPantalla(intNumeroX,intNumeroY);
-  } else {
-            porConsola(intNumeroX,intNumeroY);
-         }
-}
 
-calculadora(4,5);

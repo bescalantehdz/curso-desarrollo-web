@@ -9,25 +9,25 @@
   /*var strX = "";
   var strY = "";*/
 
-  var intX = prompt("Ingresa el valor 1 ", "");
-  var intY = prompt("Ingresa el valor 2 ", "");
+      var IntX;
+      var IntY;
+ do{
 
-  while (intX <= 0 || intY <= 0 || isNaN(intX) || isNaN(intY)) {
-    var intX = prompt("Ingresa el valor 1 ", "");
-    var intY = prompt("Ingresa el valor 2 ", "");
-  }
+       IntX = parseInt(prompt("Ingresa el primer valor",""));
+       IntY = parseInt(prompt("Ingresa el segundo valor",""));
 
+}while(isNaN(IntX) || isNaN(IntY) || IntX <= 0 || IntY <= 0);
 
-  intX = parseInt(intX);
-  intY = parseInt(intY);
+if (IntX > IntY) {
 
+    document.write(`<p>El numero mayor es:${IntX}</p>`);
+    document.write(`<p>El numero menor es:${IntY}</p>`);
 
-  if( intX > intY ){
-    console.log("el numero mayor es: " + intX
-               +" el numero menor es: " + intY );
-  } else if (intY > intX){
-    console.log("el numero mayor es: " + intY
-                +" el numero menor es: " + intX );
-  }else{
-    console.log("Los números son iguales");
-  }
+}else if(IntY > IntX){
+
+    document.write(`<p>El numero mayor es:${IntY}</p>`);
+    document.write(`<p>El numero menor es:${IntX}</p>`);
+
+} else{
+  document.write(`<h1>Ambos Numeros son iguales</h1>`);
+}

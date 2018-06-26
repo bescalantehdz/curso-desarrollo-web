@@ -4,26 +4,25 @@
 hasta que el usuario introduzca un numero negativo */
 
 
-var intNumero;
-var intSuma = 0;
-var media;
-var cuenta = 0;
-
-do{
-
-  intNumero = parseInt(prompt("Ingresa el numero",""));
-
-  if(isNaN(intNumero)){
-    intNumero = 0;
-  } else if( intNumero > 0){
-    intSuma = intSuma + intNumero;
-    cuenta++;
-  }
+var valorInt = 0;
+var promedioInt;
+var AcumuladoInt = 0;
+var contador = 0;
 
 
-}while(intNumero > 0);
 
-  media = intSuma/cuenta;
+ 
 
-  console.log("el total de la suma es: " + intSuma +
-              " y la media es: " + media );
+while( valorInt >= 0 ){
+
+    valorInt = parseInt(prompt("Ingresa el valor a sumar, ingresa -1 para terminar"));
+    AcumuladoInt += valorInt;
+    contador++;
+}
+
+promedioInt = AcumuladoInt/contador;
+
+document.write(`<h1>Resultado de la suma</h1><br/>
+                <p>${AcumuladoInt}</p><br/>
+                <h2>Promedio de la suma</h2><br/>
+                <p>${promedioInt}</p>`);
